@@ -9,7 +9,7 @@ library(dplyr)
 library(ggplot2)
 
 #1 Using the midwest data frame produce a data table that shows output for the 
-# Ohio (OH) only.  Produce correct output by using two methods. First use
+# IL only.  Produce correct output by using two methods. First use
 # the piping method and then use the assignment method.
 ```{r}
 library(tidyverse)
