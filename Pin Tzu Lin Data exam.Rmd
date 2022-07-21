@@ -19,10 +19,12 @@ library(ggplot2)
 
 midwest %>%
   filter(state == "OH")
+  midwest %>%
+  filter(state == "Il")
 
 ###Assignmet method
-OH <-filter(midwest,state == "OH")
-print(OH)
+Il <-filter(midwest,state == "Il")
+print(Il)
 ```
 #2 Using the midwest data frame, produce a data table that shows 
 # white population that is greater than 50,000 but less than 90,000 for 
@@ -30,7 +32,7 @@ print(OH)
 ```{r}
 IN <- midwest %>%
   select(state,popwhite) %>%
-  filter(state == "IN" , popwhite >= 50000 & popwhite<= 90000)
+  filter(state == "IL" , popwhite >= 50000 & popwhite<= 90000)
 IN
 ```
 #3
@@ -42,7 +44,7 @@ IN
 ```{r}
 IN20 <-midwest %>%
   select(state,county,poptotal,popamerindian,percamerindan) %>%
-  filter(state == "IN")
+  filter(state == "IL")
   IN20
 IN20 <-  arrange(IN20,desc(popamerindian))
 head(IN20,20)
